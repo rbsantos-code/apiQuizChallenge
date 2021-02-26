@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>API Quiz</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li> <!--START & SCORE -->
+                <button class = "start-btn">Start</button>
+            </li>
+            <li>
+                <div class = "time">Time: <span id = "timer">0</span></div>
+            </li>
+            <li>
+                <a href = "#scores">High Scores</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class = "topSection">
+        <div id = "game-start" id = "start">
+            <h1>Who lives in a pineapple under the sea?!</h1>
+        </div>
+
+        <div class = "quizBox">
+            <h2 class = "question" id = "top-question"></h2>
+            <div class = "answer" id = "answer"> 
+            </div>
+        </div>
+
+        <div class = "game-end" id = "end">
+            <h2>Spongebob Squarepants!!</h2>
+            <p>Your Krabby Patty points are: <span id = "game-score"></span></p>
+            <p>
+                Enter Gamer Tag <input type = "text" id = "gamerTag" max = "4">
+                <button id = "enter">Enter</button>
+            </p>
+        </div>
+    </section>
+
+    <section class = "scores">
+        <h3 class = "highScores">High Scores:</h3>
+        <ol id = "nameAndScore"></ol>
+
+
+    </section>
+
+    <footer>
+        Good Luck and Have Fun!
+    </footer>
+    
+
+
+    <script src = "./assets/app.js"></script>
+</body>
+</html>

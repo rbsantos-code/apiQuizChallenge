@@ -1,0 +1,82 @@
+.start {
+    display: none;
+}
+
+.end {
+    display: none;
+}
+
+
+/* NAVIGATION styling start */
+li {
+    display: inline-flex;
+    align-content: center;
+    padding-right: 50px;
+}
+
+/* QUIZBOX styling start */
+
+section {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    
+}
+
+.topSection {
+    background-color: rgb(241, 241, 86);
+}
+
+
+#game-start h1 {
+    padding: 40px;
+    text-decoration: underline;
+}
+
+.quizBox {
+    margin-left: 80px;
+    margin: auto;
+    padding: 10px;
+    height: 150px;
+    background-color: rgb(241, 241, 86);
+    overflow: auto;
+}
+
+.quizBox button {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.game-end {
+    margin-left: 20px;
+    margin: auto;
+    background-color: rgb(4, 126, 240);
+    padding: 10px;
+    border: 1px solid black;
+    overflow: auto;
+
+}
+
+/* HighScore sections start */
+
+.scores {
+    overflow: auto;
+}
+
+.scores li {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+/* FOOTER styling start */
+footer {
+    background: darkgrey;
+    height: 60px;
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    border: 1px solid black;
+}
