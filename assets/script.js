@@ -75,7 +75,7 @@ function htmlQuestion() {
     showQuestion.choices.forEach(function (choice) {
         // create buttons for each answer
         var answerBtn = document.createElement("button");
-        answerBtn.setAttribute("value", choice);
+        answerBtn.setAttribute("value", answer);
 
         answerBtn.textContent = " " + choice;
 
@@ -97,7 +97,7 @@ function questionEvent() {
     if (this.value !== quizQuestions[currentQuest].answer) {
         console.log('wrong');
         // reduce time
-        time -= 10;
+        time -= 5;
 
         if (time < 0) {
             time = 0;
@@ -133,15 +133,14 @@ function quizEnd() {
     clearInterval(timeClock);
     if (time === 0) {
         alert("Game Over!");
-        return;
     }
-
 
     // show game score
     var gameScoreEl = document.getElementById("game-score");
     gameScoreEl.textContent = time;
 
 }
+
 
 // This is the TIME function
 
@@ -163,6 +162,7 @@ function saveScore() {
     if (gameTag !== "") {
         // retrieve scores from storage
         var highScore = JSON.parse(window.localStorage.getItem("highScore")) || [];
+
 
         var krabbyPatty = {
             score: time,
