@@ -97,7 +97,7 @@ function questionEvent(incomingAnswer) {
     if (incomingAnswer !== quizQuestions[currentQuest].answer) {
         console.log('wrong');
         // reduce time
-        time -= 5;
+        time -= 10;
 
         if (time < 0) {
             time = 0;

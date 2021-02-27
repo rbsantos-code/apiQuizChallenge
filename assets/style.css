@@ -6,6 +6,10 @@
     display: none;
 }
 
+body {
+    background: rgb(8, 190, 245);
+}
+
 
 /* NAVIGATION styling start */
 li {
@@ -62,6 +66,9 @@ section {
 
 .scores {
     overflow: auto;
+    background-image: url("./images/SBhome.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .scores li {
@@ -72,11 +79,19 @@ section {
 
 /* FOOTER styling start */
 footer {
-    background: darkgrey;
-    height: 60px;
+    background-image: url("./images/captain.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+    height: 30px;
     color: white;
     font-size: xx-large;
     text-align: center;
-    padding: 10px 0 10px 0;
+    padding: 10px 0 50px 0;
     border: 1px solid black;
+}
+
+footer p {
+    text-decoration: solid;
+    text-align: center;
 }
