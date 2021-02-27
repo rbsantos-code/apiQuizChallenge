@@ -8,6 +8,9 @@
 
 body {
     background: rgb(8, 190, 245);
+    background-image: url("./images/bkNightTime.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
@@ -16,6 +19,7 @@ li {
     display: inline-flex;
     align-content: center;
     padding-right: 50px;
+    color: white;
 }
 
 /* QUIZBOX styling start */
@@ -52,6 +56,8 @@ section {
     margin-right: 10px;
 }
 
+/* INFO section start */
+
 .game-end {
     margin-left: 20px;
     margin: auto;
@@ -59,6 +65,7 @@ section {
     padding: 10px;
     border: 1px solid black;
     overflow: auto;
+    
 
 }
 
@@ -83,12 +90,15 @@ footer {
     background-position: center;
     background-repeat: repeat;
     background-size: contain;
-    height: 30px;
+    height: 25px;
     color: white;
     font-size: xx-large;
     text-align: center;
     padding: 10px 0 50px 0;
-    border: 1px solid black;
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 footer p {
