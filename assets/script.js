@@ -75,13 +75,13 @@ function htmlQuestion() {
     showQuestion.choices.forEach(function (choice) {
         // create buttons for each answer
         var answerBtn = document.createElement("button");
-        answerBtn.setAttribute("value", answer);
+        answerBtn.setAttribute("value", choice);
 
         answerBtn.textContent = " " + choice;
 
 
         answerBtn.addEventListener("click", function (event) {
-            questionEvent();
+            questionEvent(event.target.textContent.trim());
         })
 
         // show on the page
@@ -92,9 +92,9 @@ function htmlQuestion() {
 
 // FUNCTIONALITY SECTION -------
 
-function questionEvent() {
+function questionEvent(incomingAnswer) {
     // player chooses wrong answer
-    if (this.value !== quizQuestions[currentQuest].answer) {
+    if (incomingAnswer !== quizQuestions[currentQuest].answer) {
         console.log('wrong');
         // reduce time
         time -= 5;
